@@ -1,1 +1,30 @@
 @import "tailwindcss";
+
+h1 {
+  @apply text-2xl font-semibold;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+p {
+  font-size: 16;
+}
+
+@keyframes carousel {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-166.6%);
+  }
+}
+
+.animate-carousel {
+  animation: carousel 20s linear infinite;
+}
+
+.animate-carousel:hover {
+  animation-play-state: paused;
+}
