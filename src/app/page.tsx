@@ -117,7 +117,7 @@ export default function Home() {
 
           <ContactBtn className="lg:hidden" />
         </div>
-        <div className="relative">
+        <div className="relative lg:size-[460px]">
           <div className="absolute inset-0 flex flex-col justify-between text-white">
             <p className="bg-linear-to-b from-black p-4 rounded-tr-4xl">
               Kamila Diniz
@@ -128,7 +128,7 @@ export default function Home() {
             </p>
           </div>
           <img
-            src="unika.jpg"
+            src="kamila.jpg"
             alt=""
             className="size-full object-cover rounded-tr-4xl rounded-bl-4xl"
           />
@@ -162,12 +162,54 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-black">
-        <InfiniteCarousel />
-      </section>
+      <InfiniteCarousel />
 
-      <footer className="h-80 w-full bg-[#004d5a] flex items-center justify-center text-[#C2AD6A]">
-        <h1 className="">FOOTER</h1>
+      <footer className="p-4 pt-16 space-y-8 w-full bg-[#004d5a] m-auto text-[#C2AD6A]">
+        <div className="space-y-12 lg:grid lg:grid-cols-2 lg:space-y-0 lg:gap-16">
+          <div className="space-y-4">
+            <h1>UNIKA Crédito & Soluções</h1>
+            <p className="text-[#ccc] text-pretty leading-7">
+              A Unika Crédito & Soluções é liderada por Kamila Diniz, engenheira
+              com mais de 10 anos de experiência em financiamentos. Oferecemos
+              soluções financeiras personalizadas com foco em crédito
+              consignado, INSS, FGTS, consórcio, seguros e empréstimos com
+              garantia de veículo. Compromisso, confiança e transparência para
+              te ajudar a conquistar seus objetivos.
+            </p>
+          </div>
+          <div className="space-y-4">
+            <ul className="list-disc list-inside space-y-2">
+              <h2 className="font-semibold">Serviços</h2>
+              <div className="flex space-x-8 text-[#ccc]">
+                <div>
+                  <li>FGTS</li>
+                  <li>INSS</li>
+                  <li>Consignado</li>
+                  <li>Empréstimo Consignado</li>
+                </div>
+                <div>
+                  <li>Consórcio</li>
+                  <li>Seguros</li>
+                  <li>Empréstimo com garantia de veículo</li>
+                </div>
+              </div>
+            </ul>
+            <ul className="space-y-2">
+              <h2 className="font-semibold">Contato</h2>
+              <li className="text-[#ccc]">
+                <strong>WhatsApp:</strong> 17 99210-0872
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <hr />
+        <div className="flex flex-col items-center text-sm space-y-2 lg:flex-row lg:space-y-0 lg:justify-around">
+          <p className="text-center">
+            Todos os direitos reservados &copy; 2025 Unika Crédito & Consignado
+          </p>
+          <p>Developed by UX Studios</p>
+        </div>
       </footer>
     </main>
   );

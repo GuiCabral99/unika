@@ -24,7 +24,7 @@ export default function ServiceCard({
         <h3 className="text-xl font-semibold lg:text-2xl">{name}</h3>
         <p className="text-[#333] lg:text-lg">{description}</p>
         <Link
-          href="https://api.whatsapp.com"
+          href="https://api.whatsapp.com/send?phone=5517992100872"
           className="block  p-2 text-center rounded text-lg bg-[#C2AD6A] text-white hover:text-color-dark hover:transition hover:duration-150 duration-150 lg:text-xl"
           target="_blank"
         >
